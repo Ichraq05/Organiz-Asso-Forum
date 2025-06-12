@@ -1,0 +1,90 @@
+# À la racine du projet
+cd server && npm install      # installer serveur
+cd ../client && npm install   # installer client
+
+# Lancer les deux services (dans deux onglets)
+cd server && npm start
+cd client && npm start
+
+# Pour le build de production (client)
+cd client && npm run build
+
+
+
+Optionnel Lancer les deux en une seule commande
+Si tu veux tout faire d’un coup dans le même dossier racine, installe un outil comme concurrently :
+# À la racine du projet
+npm install --save-dev concurrently
+
+dans package.json
+{
+  "scripts": {
+    "dev": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
+
+npm run dev
+
+
+Ctrl + C = stoppe npm start.
+
+Ouvre deux terminaux (ou onglets) pour garder le serveur et le client actifs en même temps.
+
+Si tu préfères, utilise concurrently pour un lancer unique.
+
+
+npm install react-scripts --save
+
+
+ajouter message manuellement :
+db.messages.insertOne({
+  userId: ObjectId("682d051923681a8085b34e62"),
+  content: "Ceci est un message seedé manuellement",
+  forum: "ouvert",
+  timestamp: new Date()
+})
+
+ajout users :
+use organizasso
+
+db.users.insertMany([
+  { login: "user1", password: "pass1", firstname: "Alice",   lastname: "Martin", member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/women/1.jpg" },
+  { login: "user2", password: "pass2", firstname: "Bob",     lastname: "Dupont", member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/men/2.jpg" },
+  { login: "user3", password: "pass3", firstname: "Carla",   lastname: "Moreau", member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/women/3.jpg" },
+  { login: "user4", password: "pass4", firstname: "David",   lastname: "Leroy",  member: false, admin: true,  profilePhoto: "https://randomuser.me/api/portraits/men/4.jpg" },
+  { login: "user5", password: "pass5", firstname: "Emma",    lastname: "Bernard",member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/women/5.jpg" },
+  { login: "user6", password: "pass6", firstname: "Franck",  lastname: "Petit",  member: false, admin: false, profilePhoto: "https://randomuser.me/api/portraits/men/6.jpg" },
+  { login: "user7", password: "pass7", firstname: "Gwenaëlle",lastname: "Roux",  member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/women/7.jpg" },
+  { login: "user8", password: "pass8", firstname: "Hugo",    lastname: "Faure",  member: false, admin: false, profilePhoto: "https://randomuser.me/api/portraits/men/8.jpg" },
+  { login: "user9", password: "pass9", firstname: "Inès",    lastname: "Poirier",member: true,  admin: false, profilePhoto: "https://randomuser.me/api/portraits/women/9.jpg" },
+  { login: "user10",password: "pass10",firstname: "Julien",  lastname: "Lemoine",member: false, admin: false, profilePhoto: "https://randomuser.me/api/portraits/men/10.jpg" }
+])
+
+
+lister user:
+db.users.find().pretty()
+
+
+trouver admin :
+db.users.find({ admin: true })
+
+
+maj mdp:
+db.users.updateOne(
+  { login: "user3" },
+  { $set: { password: "newpass3" } }
+)
+
+supprimer un user
+db.users.deleteOne({ login: "user6" })
+
+
+compter membres :
+db.users.countDocuments({ member: true })
+
+
+verifier pdp :
+db.users.find({ profilePhoto: { $exists: true } })
