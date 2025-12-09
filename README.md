@@ -4,10 +4,9 @@
 
 ## 📌 Présentation
 
-**Organiz-asso** est une application web Fullstack (MERN) conçue pour digitaliser la vie d'une association. Elle centralise la gestion des membres, l'animation de la communauté via des forums et l'administration des droits d'accès.
+**Organiz-asso** est une plateforme web complète conçue pour gérer la vie numérique d'une association.
 
-L'objectif principal était de concevoir une **architecture logicielle robuste**, séparant clairement le client (React) du serveur (API Node.js), tout en implémentant une gestion stricte des rôles (RBAC).
-
+L'objectif était de créer une application **robuste** en utilisant une architecture **Fullstack** : nous avons séparé clairement l'interface utilisateur (le client) de toute la logique et la gestion des données (le serveur). Le point central de la conception est la **gestion stricte des rôles (RBAC)** pour différencier les Membres des Administrateurs.
 ---
 
 ## 📸 Aperçu de l'Application
@@ -36,14 +35,14 @@ Un espace d'échange avec lecture des fils de discussion et participation.
 
 ---
 
-## 🛠️ Stack Technique
+## 🛠️ Outils Techniques Utilisés (Stack)
 
-| Composant | Technologie | Usage |
-| :--- | :--- | :--- |
-| **Frontend** | React.js | SPA, Hooks (useState, useEffect), Axios |
-| **Backend** | Node.js / Express | API REST, Middleware de sécurité |
-| **Base de Données** | MongoDB | Base NoSQL orientée documents |
-| **Outils** | Mongoose, Git | Modélisation des données (ODM) |
+Ce projet est basé sur la stack **MERN** (MongoDB, Express, React, Node.js).
+
+* **Interface (Frontend)** : Nous avons utilisé **React.js** pour développer une interface dynamique (SPA - Single Page Application).
+* **Logique Serveur (Backend)** : Le "cerveau" de l'application est géré par **Node.js** et le framework **Express**, qui expose une **API REST** sécurisée.
+* **Base de Données** : Toutes les données sont stockées dans **MongoDB**, une base de données flexible de type **NoSQL**.
+* **Modélisation** : Nous avons utilisé **Mongoose** comme outil de modélisation des données.
 
 ---
 
