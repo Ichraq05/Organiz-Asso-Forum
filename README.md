@@ -1,8 +1,6 @@
 # 🏛️ Organiz-asso — Plateforme de Gestion Associative
 
-![Status](https://img.shields.io/badge/Status-Terminé-success?style=for-the-badge)
-
-> **Projet Universitaire** | Master Informatique - Université Côte d'Azur
+> **Projet Universitaire** | - Sorbonne Université
 
 ## 📌 Présentation
 
