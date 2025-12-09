@@ -36,9 +36,7 @@ Un espace d'échange avec lecture des fils de discussion et participation.
 
 ---
 
-## 🛠️ Outils Techniques Utilisés (La Stack)
-
-Ce projet repose sur un ensemble de technologies modernes **Fullstack JavaScript** :
+## 🛠️ Outils Techniques
 
 * **Interface (Frontend)** : L'interface utilisateur est codée avec **React.js**. Cela permet de construire une seule page (SPA) dynamique.
 * **Serveur (Backend)** : Le serveur est géré par **Node.js** et le framework **Express**.
