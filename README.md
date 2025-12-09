@@ -16,7 +16,7 @@ L'objectif principal était de concevoir une **architecture logicielle robuste**
 Système complet d'inscription et de connexion sécurisée.
 <p align="center">
   <img src="./Organiz-asso/assets/Connexion.png" width="48%" alt="Page de Connexion" />
-  <img src="./assets/Inscription.png" width="48%" alt="Page d'Inscription" />
+  <img src="./Organiz-asso/assets/Inscription.png" width="48%" alt="Page d'Inscription" />
 </p>
 
 ### 2. Gestion des Rôles (RBAC)
@@ -24,14 +24,14 @@ L'interface s'adapte dynamiquement selon que l'utilisateur est **Administrateur*
 
 | Espace Administrateur (Alice) | Espace Membre (Micheal) |
 |:---:|:---:|
-| <img src="./assets/Dashboard AdminAlice.png" alt="Dashboard Admin" width="100%"> | <img src="./assets/Dashboard MembreMicheal.png" alt="Dashboard Membre" width="100%"> |
+| <img src="./Organiz-asso/assets/Dashboard AdminAlice.png" alt="Dashboard Admin" width="100%"> | <img src="./Organiz-asso/assets/Dashboard MembreMicheal.png" alt="Dashboard Membre" width="100%"> |
 | *Accès complet : Gestion inscriptions & admins.* | *Accès restreint : Forums & profil uniquement.* |
 
 ### 3. Forums de Discussion
 Un espace d'échange avec lecture des fils de discussion et participation.
 <p align="center">
-  <img src="./assets/Liste Forum.png" width="48%" alt="Liste des sujets" />
-  <img src="./assets/Détail Message.png" width="48%" alt="Détail d'une discussion" />
+  <img src="./Organiz-asso/assets/Liste Forum.png" width="48%" alt="Liste des sujets" />
+  <img src="./Organiz-asso/assets/Détail Message.png" width="48%" alt="Détail d'une discussion" />
 </p>
 
 ---
