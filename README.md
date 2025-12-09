@@ -1,36 +1,38 @@
-# 🏛️ Organiz-asso — Plateforme de Gestion Associative
+# Organiz-asso — Plateforme de Gestion Associative
 
-> **Projet Universitaire** | - Sorbonne Université
+> **Projet Universitaire** | Master Informatique - Université Côte d'Azur
 
 ## 📌 Présentation
 
-**Organiz-asso** est une application web Fullstack (MERN) destinée à la gestion d'une association. Elle permet de digitaliser les interactions entre les membres et l'administration via un système de forums sécurisés et une gestion fine des droits utilisateurs.
+**Organiz-asso** est une application web Fullstack (MERN) conçue pour digitaliser la vie d'une association. Elle centralise la gestion des membres, l'animation de la communauté via des forums et l'administration des droits d'accès.
 
-L'objectif de ce projet était de concevoir une architecture robuste séparant le client (React) du serveur (Node/Express) et de modéliser une base de données NoSQL adaptée aux besoins associatifs.
-
-## 📸 Aperçu
-
-![Aperçu de l'application](https://via.placeholder.com/800x450?text=Ajouter+une+Capture+d'%C3%A9cran+Ici)
-*(Ajoute une capture d'écran de ta page d'accueil ici pour rendre le projet vivant)*
+L'objectif principal était de concevoir une **architecture logicielle robuste**, séparant clairement le client (React) du serveur (API Node.js), tout en implémentant une gestion stricte des rôles (RBAC).
 
 ---
 
-## 🚀 Fonctionnalités Clés
+## 📸 Aperçu de l'Application
 
-### 👤 Gestion des Utilisateurs
-* **Authentification sécurisée** : Inscription et connexion.
-* **Système de validation** : Les nouveaux inscrits doivent être validés par un administrateur pour devenir "Membre".
-* **Profils** : Consultation des profils membres.
+### 1. Authentification
+Système complet d'inscription et de connexion sécurisée.
+<p align="center">
+  <img src="./assets/Connexion.png" width="48%" alt="Page de Connexion" />
+  <img src="./assets/Inscription.png" width="48%" alt="Page d'Inscription" />
+</p>
 
-### 💬 Forums de Discussion
-* 🟢 **Forum Ouvert** : Accessible à tous les membres validés pour échanger.
-* 🔒 **Forum Fermé** : Espace confidentiel réservé exclusivement au Conseil d'Administration (Admins).
-* **Gestion des messages** : Publication, suppression (ses propres messages ou modération admin).
-* **Recherche** : Filtrage par mots-clés, auteur ou date.
+### 2. Gestion des Rôles (RBAC)
+L'interface s'adapte dynamiquement selon que l'utilisateur est **Administrateur** (Alice) ou **Membre** (Micheal).
 
-### 🛡️ Administration
-* Promotion/Révocation des droits d'administrateur.
-* Modération des inscriptions et du contenu.
+| Espace Administrateur (Alice) | Espace Membre (Micheal) |
+|:---:|:---:|
+| <img src="./assets/Dashboard AdminAlice.png" alt="Dashboard Admin" width="100%"> | <img src="./assets/Dashboard MembreMicheal.png" alt="Dashboard Membre" width="100%"> |
+| *Accès complet : Gestion inscriptions & admins.* | *Accès restreint : Forums & profil uniquement.* |
+
+### 3. Forums de Discussion
+Un espace d'échange avec lecture des fils de discussion et participation.
+<p align="center">
+  <img src="./assets/Liste Forum.png" width="48%" alt="Liste des sujets" />
+  <img src="./assets/Détail Message.png" width="48%" alt="Détail d'une discussion" />
+</p>
 
 ---
 
@@ -38,23 +40,22 @@ L'objectif de ce projet était de concevoir une architecture robuste séparant l
 
 | Composant | Technologie | Usage |
 | :--- | :--- | :--- |
-| **Frontend** | React.js | Single Page Application (SPA), Hooks, Axios |
-| **Backend** | Node.js / Express | API REST, Middleware d'authentification |
-| **Base de Données** | MongoDB | Stockage NoSQL (Collections Users, Messages) |
-| **Outils** | Mongoose, Git | Modélisation des données (ODM), Versionning |
+| **Frontend** | React.js | SPA, Hooks (useState, useEffect), Axios |
+| **Backend** | Node.js / Express | API REST, Middleware de sécurité |
+| **Base de Données** | MongoDB | Base NoSQL orientée documents |
+| **Outils** | Mongoose, Git | Modélisation des données (ODM) |
 
 ---
 
 ## 🚦 Installation et Démarrage
 
-Suivez ces instructions pour lancer le projet en local.
+Suivez ces étapes pour lancer le projet en local.
 
-### 1. Pré-requis et Installation
-À la racine du projet, installez les dépendances pour le client et le serveur :
-
+### 1. Pré-requis
+À la racine du projet, installez les dépendances :
 ```bash
-# Installer le backend
+# Installer le serveur
 cd server && npm install
 
-# Installer le frontend
+# Installer le client
 cd ../client && npm install
