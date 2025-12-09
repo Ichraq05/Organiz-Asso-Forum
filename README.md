@@ -4,9 +4,10 @@
 
 ## 📌 Présentation
 
-**Organiz-asso** est une plateforme web complète conçue pour gérer la vie numérique d'une association.
+**Organiz-asso** est une plateforme web complète. L'objectif est de fournir à une association un outil pour gérer ses membres et organiser des **forums de discussion** en ligne.
 
-L'objectif était de créer une application **robuste** en utilisant une architecture **Fullstack** : nous avons séparé clairement l'interface utilisateur (le client) de toute la logique et la gestion des données (le serveur). Le point central de la conception est la **gestion stricte des rôles (RBAC)** pour différencier les Membres des Administrateurs.
+L'application est construite sur une architecture **Fullstack** où l'interface (le Client) est clairement séparée de la logique (le Serveur). Le point central du développement est la **gestion stricte des rôles** (Admin ou Membre) pour contrôler les accès et les permissions.
+
 ---
 
 ## 📸 Aperçu de l'Application
@@ -24,7 +25,7 @@ L'interface s'adapte dynamiquement selon que l'utilisateur est **Administrateur*
 | Espace Administrateur (Alice) | Espace Membre (Micheal) |
 |:---:|:---:|
 | <img src="./Organiz-asso/assets/Dashboard AdminAlice.png" alt="Dashboard Admin" width="100%"> | <img src="./Organiz-asso/assets/Dashboard MembreMicheal.png" alt="Dashboard Membre" width="100%"> |
-| *Accès complet : Gestion inscriptions & admins.* | *Accès restreint : Forums & profil uniquement.* |
+| *Accès complet : Gestion inscriptions & admins.* | *Accès restreint : Forums, Liste d'amis & profil uniquement.* |
 
 ### 3. Forums de Discussion
 Un espace d'échange avec lecture des fils de discussion et participation.
@@ -35,14 +36,14 @@ Un espace d'échange avec lecture des fils de discussion et participation.
 
 ---
 
-## 🛠️ Outils Techniques Utilisés (Stack)
+## 🛠️ Outils Techniques Utilisés (La Stack)
 
-Ce projet est basé sur la stack **MERN** (MongoDB, Express, React, Node.js).
+Ce projet repose sur un ensemble de technologies modernes **Fullstack JavaScript** :
 
-* **Interface (Frontend)** : Nous avons utilisé **React.js** pour développer une interface dynamique (SPA - Single Page Application).
-* **Logique Serveur (Backend)** : Le "cerveau" de l'application est géré par **Node.js** et le framework **Express**, qui expose une **API REST** sécurisée.
-* **Base de Données** : Toutes les données sont stockées dans **MongoDB**, une base de données flexible de type **NoSQL**.
-* **Modélisation** : Nous avons utilisé **Mongoose** comme outil de modélisation des données.
+* **Interface (Frontend)** : L'interface utilisateur est codée avec **React.js**. Cela permet de construire une seule page (SPA) dynamique.
+* **Logique Serveur (Backend)** : Le serveur est géré par **Node.js** et le framework **Express**, qui expose l'**API REST** sécurisée.
+* **Base de Données** : Les données sont stockées dans **MongoDB**, une base de données flexible (NoSQL).
+* **Modélisation** : **Mongoose** est utilisé pour organiser et structurer les données.
 
 ---
 
