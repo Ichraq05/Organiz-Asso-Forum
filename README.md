@@ -1,6 +1,6 @@
 # Organiz-asso — Plateforme de Gestion Associative
 
-> **Projet Universitaire** | Master Informatique - Université Côte d'Azur
+> **Projet Universitaire Inidviduel** | Sorbonne Université
 
 ## 📌 Présentation
 
