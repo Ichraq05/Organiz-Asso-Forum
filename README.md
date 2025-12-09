@@ -1,107 +1,62 @@
-# 🏛️ Organiz-asso — Plateforme Web Associative
+# 🏛️ Organiz-asso — Plateforme de Gestion Associative
 
-![Status](https://img.shields.io/badge/status-completed-brightgreen)
-![Stack](https://img.shields.io/badge/stack-MERN-blue)
-![Context](https://img.shields.io/badge/context-university%20project-orange)
+![Status](https://img.shields.io/badge/Status-Terminé-success?style=for-the-badge)
+
+> **Projet Universitaire** | Master Informatique - Université Côte d'Azur
 
 ## 📌 Présentation
 
-**Organiz-asso** est une application web permettant la gestion et l’animation d’une association à travers un système de forums, de rôles utilisateurs et d’administration centralisée.
+**Organiz-asso** est une application web Fullstack (MERN) destinée à la gestion d'une association. Elle permet de digitaliser les interactions entre les membres et l'administration via un système de forums sécurisés et une gestion fine des droits utilisateurs.
 
-Le projet met l’accent sur :
-- la **modélisation logicielle**
-- la **séparation client / serveur**
-- la **gestion des droits et rôles**
-- l’interaction avec une **base de données NoSQL**
+L'objectif de ce projet était de concevoir une architecture robuste séparant le client (React) du serveur (Node/Express) et de modéliser une base de données NoSQL adaptée aux besoins associatifs.
 
----
+## 📸 Aperçu
 
-## 🎯 Objectifs Fonctionnels
-
-- Gestion des comptes utilisateurs (inscription, connexion, déconnexion)
-- Validation des inscriptions par des administrateurs
-- Forums de discussion :
-  - 🟢 **Forum ouvert** accessible à tous les membres
-  - 🔒 **Forum fermé** réservé aux administrateurs
-- Publication, consultation et suppression de messages
-- Recherche de messages par :
-  - mots-clés
-  - auteur
-  - intervalle de temps
-- Gestion des rôles (membre / administrateur)
+![Aperçu de l'application](https://via.placeholder.com/800x450?text=Ajouter+une+Capture+d'%C3%A9cran+Ici)
+*(Ajoute une capture d'écran de ta page d'accueil ici pour rendre le projet vivant)*
 
 ---
 
-## 🧱 Architecture du Projet
+## 🚀 Fonctionnalités Clés
 
-### Frontend (Client)
-- React
-- Axios (communication API)
-- Application SPA
-- Dossier `build/` fourni pour la production
+### 👤 Gestion des Utilisateurs
+* **Authentification sécurisée** : Inscription et connexion.
+* **Système de validation** : Les nouveaux inscrits doivent être validés par un administrateur pour devenir "Membre".
+* **Profils** : Consultation des profils membres.
 
-### Backend (Serveur)
-- Node.js
-- Express
-- MongoDB avec Mongoose
-- Gestion des sessions et des rôles
-- API REST sécurisée
+### 💬 Forums de Discussion
+* 🟢 **Forum Ouvert** : Accessible à tous les membres validés pour échanger.
+* 🔒 **Forum Fermé** : Espace confidentiel réservé exclusivement au Conseil d'Administration (Admins).
+* **Gestion des messages** : Publication, suppression (ses propres messages ou modération admin).
+* **Recherche** : Filtrage par mots-clés, auteur ou date.
 
-### Base de Données
-- Utilisateurs (statut, rôle, profil)
-- Messages (contenu, auteur, date)
-- Forums (ouvert / fermé)
+### 🛡️ Administration
+* Promotion/Révocation des droits d'administrateur.
+* Modération des inscriptions et du contenu.
 
 ---
 
-## 🔐 Sécurité & Contrôle d’Accès
+## 🛠️ Stack Technique
 
-- Authentification par session
-- Contrôle des accès selon le rôle utilisateur
-- Restrictions strictes sur :
-  - le forum administrateur
-  - la validation des comptes
-  - la gestion des privilèges
-
----
-
-## ⚙️ Technologies & Outils
-
-- **Langages** : JavaScript
-- **Frontend** : React
-- **Backend** : Node.js, Express
-- **Base de données** : MongoDB
-- **Architecture** : Client / Serveur
-- **Outils** : npm, Git, GitHub
+| Composant | Technologie | Usage |
+| :--- | :--- | :--- |
+| **Frontend** | React.js | Single Page Application (SPA), Hooks, Axios |
+| **Backend** | Node.js / Express | API REST, Middleware d'authentification |
+| **Base de Données** | MongoDB | Stockage NoSQL (Collections Users, Messages) |
+| **Outils** | Mongoose, Git | Modélisation des données (ODM), Versionning |
 
 ---
 
-## 📂 Structure Générale
-Organiz-asso/
-│
-├── client/ # Frontend React
-├── serveur/ # Backend Node.js / Express
-├── build/ # Version production du client
-├── README.md
+## 🚦 Installation et Démarrage
 
+Suivez ces instructions pour lancer le projet en local.
 
----
+### 1. Pré-requis et Installation
+À la racine du projet, installez les dépendances pour le client et le serveur :
 
-## 🎓 Contexte Académique
+```bash
+# Installer le backend
+cd server && npm install
 
-Projet réalisé dans le cadre de l’UE **Technologies du Web**, portant sur :
-- la modélisation d’un système web
-- la conception d’API
-- la gestion des interactions client–serveur
-- la structuration d’une base de données
-
----
-
-## ✅ État du Projet
-
-✔ Fonctionnel  
-✔ Architecture complète  
-✔ Conforme au cahier des charges  
-✔ Prêt à être présenté (CV / entretien)
-
-
+# Installer le frontend
+cd ../client && npm install
