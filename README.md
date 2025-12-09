@@ -59,3 +59,20 @@ cd server && npm install
 
 # Installer le client
 cd ../client && npm install
+```
+
+### 2. Lancement du projet
+Deux modes de lancement sont possibles.
+#### Option A : Mode Unifié (Recommandé)
+Si "concurrently" est configuré, lancez le frontend et le backend en une seule commande depuis la racine du projet :
+```bash
+npm run dev
+```
+#### Option B : Mode Manuel
+Ouvrez deux terminaux séparés :
+```bash
+# Terminal 1
+cd server && npm start
+# Terminal 2
+cd client && npm start
+```
