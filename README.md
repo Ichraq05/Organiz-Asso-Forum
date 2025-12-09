@@ -15,7 +15,7 @@ L'objectif principal était de concevoir une **architecture logicielle robuste**
 ### 1. Authentification
 Système complet d'inscription et de connexion sécurisée.
 <p align="center">
-  <img src="./assets/Connexion.png" width="48%" alt="Page de Connexion" />
+  <img src="./Organiz-asso/assets/Connexion.png" width="48%" alt="Page de Connexion" />
   <img src="./assets/Inscription.png" width="48%" alt="Page d'Inscription" />
 </p>
 
