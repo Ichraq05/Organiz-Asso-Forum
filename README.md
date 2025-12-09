@@ -1,6 +1,6 @@
 # Organiz-asso — Plateforme de Gestion Associative
 
-> **Projet Universitaire Inidviduel** | Sorbonne Université
+> **Projet Universitaire Individuel** | Sorbonne Université
 
 ## 📌 Présentation
 
