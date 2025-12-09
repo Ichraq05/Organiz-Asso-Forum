@@ -41,7 +41,7 @@ Un espace d'échange avec lecture des fils de discussion et participation.
 Ce projet repose sur un ensemble de technologies modernes **Fullstack JavaScript** :
 
 * **Interface (Frontend)** : L'interface utilisateur est codée avec **React.js**. Cela permet de construire une seule page (SPA) dynamique.
-* **Logique Serveur (Backend)** : Le serveur est géré par **Node.js** et le framework **Express**, qui expose l'**API REST** sécurisée.
+* **Serveur (Backend)** : Le serveur est géré par **Node.js** et le framework **Express**.
 * **Base de Données** : Les données sont stockées dans **MongoDB**, une base de données flexible (NoSQL).
 * **Modélisation** : **Mongoose** est utilisé pour organiser et structurer les données.
 
